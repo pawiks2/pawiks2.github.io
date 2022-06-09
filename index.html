@@ -18,7 +18,12 @@
 
       scanner.addListener('scan', function (content) {
      
-        store();
+         database.ref('code/').push({
+
+        code: content
+        
+        
+    });
        alert(content);
       });
 
