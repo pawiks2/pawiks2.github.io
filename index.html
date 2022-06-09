@@ -18,7 +18,7 @@
 
       scanner.addListener('scan', function (content) {
      
-         database.ref('scan/code').push({
+         database.ref('scan/').set({
 
         content: content
         
